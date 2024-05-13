@@ -8,7 +8,7 @@ In the [thesis]() related to this repository, the shape transitions of migrating
 
 ### Wound healing assay
 Studying cell migration in controlled experimental settings provides valuable insights into the dynamic behaviors of cancer cells during the metastatic process as well as in understanding cancer cell phenotype. Visualization of growth, individual cell movements, cell-cell interactions, and the overall progression of migration in response to various stimuli or treatments can be made visible through wound healing assays. Image-based data of cells moving while reacting to a perturbation captures a snapshot of the cell's condition. To observe and quantify morphological and comparable features in time and space it is essential to understand the relation of signaling networks and resulting migratory behavior. Wound healing, the movement of cells into a wound to accomplish gap closure, is a way to perturb a system to show its reaction on a change in its microenvironment. Other cell migration assays are chemotaxis, where cells migrate in response to a chemical environment, haptotaxis, meaning cell migration happens within a gradient of chemoattractants, and transmigration, which refers to cells moving through a vascular endothelium. When using the technique of a wound healing assay, a gap is created by mechanically scratching a confluent monolayer of cells with a needle in order to remove some of them. After that, cells move inward to fill the void as visible in:
-![wound healing](wound_healing.gif)
+![wound healing](images/016022_track_border_changes.gif)
 Compatible with image based readout the scratch assay offers enhanced accuracy, sensitivity and robustness in learning about the underlying mechanisms governing cancer cell movement in comparison to other migration assays.
 
 ### siRNA knockdowns
@@ -17,7 +17,7 @@ Recent research has increasingly focused on identifying key regulatory molecules
 In the conducted wound healing experiment, a wound closing more intensely would suggest an aggressively growing siRNA knockdown. In comparison, cells closing a wound less fast than the wild type cells indicate the detection of a potential drug target.
 
 ### Methods and Results
-This repository gives an overview of the code used to analyse biological time-series image data. 
+This repository gives an overview of the code used to analyse biological time-series image data. It is divided into the four sub-topics 1. Image pre-processing, 2. Scratch detection, 3. Cell feature analysis and 4. Cell trajectory analysis. Each sub-topic is represented by either a Jupyter Notebook or a Python script covering some code as well as explanations and graphics.
 
 1. [Image pre-processing](https://github.com/olxssa/bachelorproject/blob/main/image_stitching_AND_drift_correction_exp2_MIST.ijm):
 * Image stitching using the Fiji plugin ['Microscopy Image Stitching Tool'](https://www.nature.com/articles/s41598-017-04567-y)
@@ -29,7 +29,7 @@ This repository gives an overview of the code used to analyse biological time-se
 * Velocity of tissue borders
 * Distance fields
    
-3. [Cell feature extraction]():
+3. [Cell feature analysis]():
 * Cell segmentation using [Cellpose 2.0](https://www.nature.com/articles/s41592-022-01663-4)
 * Extraction of cell features using scikit-image 
 * Nuclei displacement polarity
