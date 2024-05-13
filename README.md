@@ -8,8 +8,8 @@ In the [thesis](https://box.hu-berlin.de/f/29a696d5bda24bc1b796/) related to thi
 
 ### Wound healing assay
 Studying cell migration in controlled experimental settings provides valuable insights into the dynamic behaviors of cancer cells during the metastatic process as well as in understanding cancer cell phenotype. Visualization of growth, individual cell movements, cell-cell interactions, and the overall progression of migration in response to various stimuli or treatments can be made visible through wound healing assays. Image-based data of cells moving while reacting to a perturbation captures a snapshot of the cell's condition. To observe and quantify morphological and comparable features in time and space it is essential to understand the relation of signaling networks and resulting migratory behavior. Wound healing, the movement of cells into a wound to accomplish gap closure, is a way to perturb a system to show its reaction on a change in its microenvironment. Other cell migration assays are chemotaxis, where cells migrate in response to a chemical environment, haptotaxis, meaning cell migration happens within a gradient of chemoattractants, and transmigration, which refers to cells moving through a vascular endothelium. When using the technique of a wound healing assay, a gap is created by mechanically scratching a confluent monolayer of cells with a needle in order to remove some of them. After that, cells move inward to fill the void as visible in:
-![wound healing](https://box.hu-berlin.de/f/1f10c010266148c3b609/)
-![wound healing](https://box.hu-berlin.de/f/0858ddcc81aa4abbb05d/)
+![wound healing](/images/wound_t=0.png)
+![wound healing](/images/wound_t=16.png)
 Compatible with image based readout the scratch assay offers enhanced accuracy, sensitivity and robustness in learning about the underlying mechanisms governing cancer cell movement in comparison to other migration assays.
 
 ### siRNA knockdowns
