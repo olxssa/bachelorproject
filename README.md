@@ -17,28 +17,40 @@ Recent research has increasingly focused on identifying key regulatory molecules
 In the conducted wound healing experiment, a wound closing more intensely would suggest an aggressively growing siRNA knockdown. In comparison, cells closing a wound less fast than the wild type cells indicate the detection of a potential drug target.
 
 ### Methods and Results
-This repository gives an overview of the code used to analyse biological time-series image data. It is divided into the four sub-topics 1. Image pre-processing, 2. Scratch detection, 3. Cell feature analysis and 4. Cell trajectory analysis. Each sub-topic is represented by either a Jupyter Notebook or a Python script covering some code as well as explanations and graphics.
+This repository gives an overview of the code used to analyse biological time-series image data. It is divided into the four sub-topics 1. Image pre-processing, 2. Scratch detection, 3. Cell feature analysis and 4. Cell trajectory analysis. Each sub-topic is displayed using a Fiji macro or a Jupyter Notebook covering some code as well as explanations and graphics.
 
 1. [Image pre-processing](https://github.com/olxssa/bachelorproject/blob/main/image_stitching_AND_drift_correction_exp2_MIST.ijm):
-* Image stitching using the Fiji plugin ['Microscopy Image Stitching Tool'](https://www.nature.com/articles/s41598-017-04567-y)
-* Image drift correction using the Fiji plugin ['NanoJ Core'](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655149/)
 
-2. [Scratch detection]():
-* The scratch detection algorithm
-* Closure of wound area
-* Velocity of tissue borders
-* Distance fields
+   1.1 Image stitching using the Fiji plugin ['Microscopy Image Stitching Tool'](https://www.nature.com/articles/s41598-017-04567-y)
+
+   1.2 Image drift correction using the Fiji plugin ['NanoJ Core'](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655149/)
+
+2. [Scratch detection](https://github.com/olxssa/bachelorproject/blob/main/2_scratch_detection.ipynb):
+
+   2.1 The scratch detection algorithm
    
-3. [Cell feature analysis]():
-* Cell segmentation using [Cellpose 2.0](https://www.nature.com/articles/s41592-022-01663-4)
-* Extraction of cell features using scikit-image 
-* Nuclei displacement polarity
-* Leiden Clustering of cell features
+   2.2 Closure of wound area
    
-4. [Cell trajectory analysis]():
-* Tracking of single cells using [DeepCell-Tracking](https://github.com/vanvalenlab/deepcell-tracking)
-* Trajectory measures Mean Squared Displacment (MSD) and Persistency
+   2.3 Velocity of tissue borders
+   
+   2.4 Distance fields
+   
+4. [Cell feature analysis](https://github.com/olxssa/bachelorproject/blob/main/3_cell_feature_analysis.ipynb):
+
+   3.1 Cell segmentation using [Cellpose 2.0](https://www.nature.com/articles/s41592-022-01663-4)
+   
+   3.2 Extraction of cell features using scikit-image
+   
+   3.3 Dimensionality Reduction and Leiden Clustering of cell features
+   
+   3.4 Nuclei displacement polarity
+   
+6. [Cell trajectory analysis](https://github.com/olxssa/bachelorproject/blob/main/4_cell_trajectory_analysis.ipynb):
+
+   4.1 Tracking of single cells using [DeepCell-Tracking](https://github.com/vanvalenlab/deepcell-tracking)
+   
+   4.2 Trajectory measures Mean Squared Displacment (MSD) and Persistency
 
 ### Disclaimers
 * All example images displayed are from knockdown NTC1 (non-targeting control), derived from cell line MDA-MB-231. 
-* In the analysis, the word ’cell’ in combination with an image analysis explanation refers to the objects contained in the cytoplasma channel of the images, since it characterizes the outline and area of the cell.
+* In the analysis, the word ’cell’ in combination with an image analysis explanation refers to the objects contained in the cytoplasma channel of the images, since it characterizes the outline (shape) and area of the cell.
